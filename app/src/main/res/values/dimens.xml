@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ImageView_marginTop">30dp</dimen>
+    <dimen name="intro_marginTop">15dp</dimen>
+    <dimen name="name_field_marginTop">15dp</dimen>
+    <dimen name="name_field_marginBottom">10dp</dimen>
+    <dimen name="name_field_paddingLeft">30dp</dimen>
+    <dimen name="name_field_paddingRight">30dp</dimen>
+    <dimen name="questionSize">18sp</dimen>
+    <dimen name="answerSize">16sp</dimen>
+    <dimen name="paddingTop_score">16dp</dimen>
+</resources>

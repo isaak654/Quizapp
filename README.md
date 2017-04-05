@@ -1,0 +1,1 @@
+The project is about creating a General Knowledge Quiz App. I used multiple activities and ConstraintLayout for the first time!

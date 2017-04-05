@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/board"
+            style="@style/ImageView_style"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/board" />
+
+        <TextView
+            android:id="@+id/intro"
+            style="@style/intro_style"
+            android:layout_below="@id/board"
+            android:text="@string/app_intro" />
+
+        <EditText
+            android:id="@+id/name_field"
+            style="@style/name_field_style"
+            android:layout_below="@id/intro"
+            android:hint="@string/name_hint"
+            android:imeOptions="actionSend|flagNoExtractUi"
+            android:inputType="textCapWords" />
+
+        <Button
+            style="@style/start_button"
+            android:layout_below="@id/name_field"
+            android:onClick="changeActivity"
+            android:text="@string/start_button" />
+
+    </RelativeLayout>
+</ScrollView>

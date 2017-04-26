@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Implicit “Submit” after hitting Done on the keyboard
+        //Implicit Submit after hitting Done on the keyboard
         userName = (EditText) findViewById(R.id.name_field);
         userName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -49,13 +49,18 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    /** Called to hide keyboard on android after clicking outside EditText  */
+
+    /**
+     * Called to hide keyboard on android after clicking outside EditText
+     */
     public void hideKeyboard(View view) {
-        InputMethodManager inputMethodManager =(InputMethodManager)getSystemService(Activity.INPUT_METHOD_SERVICE);
+        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
-    /** Called when the user taps the Start button to switch Activity */
+    /**
+     * Called when the user taps the Start button to switch Activity
+     */
     public void changeActivity(View view) {
         Intent intent = new Intent(this, QuizActivity.class);
         String nameField = userName.getText().toString();
@@ -69,10 +74,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
-
     }
-
-
-
 
 }

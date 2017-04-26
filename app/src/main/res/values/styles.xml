@@ -11,6 +11,8 @@
         <item name="colorControlNormal">@color/colorAccent</item>
         <!-- Color of hint text -->
         <item name="android:textColorHint">@color/BackgroundBlackColor</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">@color/colorButtonNormal</item>
     </style>
 
     <style name="ImageView_style">
@@ -44,17 +46,18 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/color_text</item>
     </style>
 
     <style name="name_quiz_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/name_field_color</item>
-        <item tools:targetApi="17" name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginLeft">8dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item tools:targetApi="17" name="android:layout_marginStart">8dp</item>
-        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginEnd" tools:targetApi="17">@dimen/name_quiz_marginRight</item>
+        <item name="android:layout_marginLeft">@dimen/name_quiz_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/name_quiz_marginRight</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/name_quiz_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/name_quiz_marginTop</item>
         <item name="android:textAppearance">?android:textAppearanceLarge</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
@@ -62,85 +65,85 @@
     </style>
 
     <style name="Question1">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">26dp</item>
-        <item tools:targetApi="17" name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginLeft">16dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item tools:targetApi="17" name="android:layout_marginStart">16dp</item>
-        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_width">@dimen/question1_width</item>
+        <item name="android:layout_height">@dimen/question1_height</item>
+        <item name="android:layout_marginEnd" tools:targetApi="17">@dimen/questions_marginRight</item>
+        <item name="android:layout_marginLeft">@dimen/questions_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/questions_marginRight</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/questions_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/question1_marginTop</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
         <item name="android:textSize">@dimen/questionSize</item>
     </style>
 
     <style name="RadioGroup1">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/RadioGroups_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item tools:targetApi="17" name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginLeft">8dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item tools:targetApi="17" name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd" tools:targetApi="17">@dimen/RadioGroups_marginRight</item>
+        <item name="android:layout_marginLeft">@dimen/RadioGroups_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/RadioGroups_marginRight</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/RadioGroups_marginLeft</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
     </style>
 
     <style name="Question2">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/question2_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item tools:targetApi="17" name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginLeft">16dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item tools:targetApi="17" name="android:layout_marginStart">16dp</item>
-        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd" tools:targetApi="17">@dimen/questions_marginRight</item>
+        <item name="android:layout_marginLeft">@dimen/questions_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/questions_marginRight</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/questions_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/question2_marginTop</item>
         <item name="android:textSize">@dimen/questionSize</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
     </style>
 
     <style name="RadioGroup2">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/RadioGroups_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item tools:targetApi="17" name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginLeft">8dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item tools:targetApi="17" name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd" tools:targetApi="17">@dimen/RadioGroups_marginRight</item>
+        <item name="android:layout_marginLeft">@dimen/RadioGroups_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/RadioGroups_marginRight</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/RadioGroups_marginLeft</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
     </style>
 
     <style name="Question3">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/question3_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item tools:targetApi="17" name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginLeft">16dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item tools:targetApi="17" name="android:layout_marginStart">16dp</item>
-        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd" tools:targetApi="17">@dimen/questions_marginRight</item>
+        <item name="android:layout_marginLeft">@dimen/questions_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/questions_marginRight</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/questions_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/question3_marginTop</item>
         <item name="android:textSize">@dimen/questionSize</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
     </style>
 
     <style name="RadioGroup3">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/RadioGroups_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item tools:targetApi="17" name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginLeft">8dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item tools:targetApi="17" name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd" tools:targetApi="17">@dimen/RadioGroups_marginRight</item>
+        <item name="android:layout_marginLeft">@dimen/RadioGroups_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/RadioGroups_marginRight</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/RadioGroups_marginLeft</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
     </style>
 
     <style name="Question4">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/question4_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item tools:targetApi="17" name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginLeft">16dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item tools:targetApi="17" name="android:layout_marginStart">16dp</item>
-        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd" tools:targetApi="17">@dimen/questions_marginRight</item>
+        <item name="android:layout_marginLeft">@dimen/questions_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/questions_marginRight</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/questions_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/question4_marginTop</item>
         <item name="android:textSize">@dimen/questionSize</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
@@ -150,36 +153,36 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginLeft">8dp</item>
-        <item tools:targetApi="17" name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginLeft">@dimen/Canada_EditText_marginLeft</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/Canada_EditText_marginLeft</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:maxLength">20</item>
-        <item name="android:paddingLeft">30dp</item>
-        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingLeft">@dimen/Canada_EditText_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/Canada_EditText_paddingRight</item>
         <item name="android:textSize">@dimen/answerSize</item>
     </style>
 
     <style name="Question5">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/question5_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item tools:targetApi="17" name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginLeft">16dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item tools:targetApi="17" name="android:layout_marginStart">16dp</item>
-        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd" tools:targetApi="17">@dimen/questions_marginRight</item>
+        <item name="android:layout_marginLeft">@dimen/questions_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/questions_marginRight</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/questions_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/question5_marginTop</item>
         <item name="android:textSize">@dimen/questionSize</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
     </style>
 
     <style name="Question6">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/question6_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item tools:targetApi="17" name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginLeft">16dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item tools:targetApi="17" name="android:layout_marginStart">16dp</item>
-        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginEnd" tools:targetApi="17">@dimen/questions_marginRight</item>
+        <item name="android:layout_marginLeft">@dimen/questions_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/questions_marginRight</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/questions_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/question6_marginTop</item>
         <item name="android:textSize">@dimen/questionSize</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
@@ -189,12 +192,12 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginLeft">8dp</item>
-        <item tools:targetApi="17" name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginLeft">@dimen/Google_EditText_marginLeft</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/Google_EditText_marginLeft</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:maxLength">20</item>
-        <item name="android:paddingLeft">30dp</item>
-        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingLeft">@dimen/Google_EditText_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/Google_EditText_paddingRight</item>
         <item name="android:textSize">@dimen/answerSize</item>
     </style>
 
@@ -202,19 +205,20 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginBottom">10dp</item>
-        <item name="android:layout_marginTop">10dp</item>
-        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginBottom">@dimen/sendButton_marginBottom</item>
+        <item name="android:layout_marginTop">@dimen/sendButton_marginTop</item>
+        <item name="android:padding">@dimen/sendButton_padding</item>
         <item name="android:textAllCaps">true</item>
         <item name="layout_constraintHorizontal_bias">0.50</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="android:textColor">@color/color_text</item>
     </style>
 
     <style name="score_label_style">
-        <item name="android:layout_width">283dp</item>
+        <item name="android:layout_width">@dimen/scoreLabel_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginTop">@dimen/scoreLabel_marginTop</item>
         <item name="android:gravity">center</item>
         <item name="android:textAppearance">?android:textAppearanceLarge</item>
         <item name="android:textColor">@color/score_label_color</item>
@@ -227,11 +231,11 @@
     <style name="final_score_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item tools:targetApi="17" name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginLeft">8dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item tools:targetApi="17" name="android:layout_marginStart">8dp</item>
-        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginEnd" tools:targetApi="17">@dimen/finalScore_marginRight</item>
+        <item name="android:layout_marginLeft">@dimen/finalScore_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/finalScore_marginRight</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/finalScore_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/finalScore_marginTop</item>
         <item name="android:textAppearance">?android:textAppearanceLarge</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
@@ -240,22 +244,24 @@
     <style name="restart_bt_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">15dp</item>
-        <item name="android:paddingLeft">20dp</item>
-        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_marginTop">@dimen/restart_marginTop</item>
+        <item name="android:paddingLeft">@dimen/restart_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/restart_paddingRight</item>
         <item name="layout_constraintHorizontal_bias">0.501</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="android:textColor">@color/color_text</item>
     </style>
 
     <style name="exit_bt_style">
-        <item name="android:layout_width">101dp</item>
-        <item name="android:layout_height">48dp</item>
-        <item name="android:paddingLeft">20dp</item>
-        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_width">@dimen/exit_width</item>
+        <item name="android:layout_height">@dimen/exit_height</item>
+        <item name="android:paddingLeft">@dimen/exit_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/exit_paddingRight</item>
         <item name="layout_constraintBottom_toBottomOf">parent</item>
         <item name="layout_constraintHorizontal_bias">0.501</item>
         <item name="layout_constraintLeft_toLeftOf">parent</item>
         <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="android:textColor">@color/color_text</item>
     </style>
 </resources>

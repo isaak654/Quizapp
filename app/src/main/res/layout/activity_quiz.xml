@@ -140,54 +140,54 @@
             app:layout_constraintTop_toBottomOf="@+id/canadaCapital" />
 
         <CheckBox
-            android:id="@+id/checkbox1"
+            android:id="@+id/checkboxPigeon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginLeft="@dimen/checkboxPigeon_marginLeft"
+            android:layout_marginStart="@dimen/checkboxPigeon_marginLeft"
             android:text="@string/answerBox1"
             android:textSize="@dimen/answerSize"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/question5" />
 
         <CheckBox
-            android:id="@+id/checkbox2"
+            android:id="@+id/checkboxAnteater"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginLeft="@dimen/checkboxAnteater_marginLeft"
+            android:layout_marginStart="@dimen/checkboxAnteater_marginLeft"
             android:text="@string/answerBox2"
             android:textSize="@dimen/answerSize"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkbox1" />
+            app:layout_constraintTop_toBottomOf="@+id/checkboxPigeon" />
 
         <CheckBox
-            android:id="@+id/checkbox3"
+            android:id="@+id/checkboxChicken"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="110dp"
-            android:layout_marginStart="110dp"
+            android:layout_marginLeft="@dimen/checkboxChicken_marginLeft"
+            android:layout_marginStart="@dimen/checkboxChicken_marginLeft"
             android:text="@string/answerBox3"
             android:textSize="@dimen/answerSize"
-            app:layout_constraintLeft_toRightOf="@+id/checkbox1"
+            app:layout_constraintLeft_toRightOf="@+id/checkboxPigeon"
             app:layout_constraintTop_toBottomOf="@+id/question5" />
 
         <CheckBox
-            android:id="@+id/checkbox4"
+            android:id="@+id/checkboxWhale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="57dp"
-            android:layout_marginStart="57dp"
+            android:layout_marginLeft="@dimen/checkboxWhale_marginLeft"
+            android:layout_marginStart="@dimen/checkboxWhale_marginLeft"
             android:text="@string/answerBox4"
             android:textSize="@dimen/answerSize"
-            app:layout_constraintLeft_toRightOf="@+id/checkbox2"
-            app:layout_constraintTop_toBottomOf="@+id/checkbox3" />
+            app:layout_constraintLeft_toRightOf="@+id/checkboxAnteater"
+            app:layout_constraintTop_toBottomOf="@+id/checkboxChicken" />
 
         <TextView
             android:id="@+id/question6"
             style="@style/Question6"
             android:text="@string/question6"
-            app:layout_constraintTop_toBottomOf="@+id/checkbox2" />
+            app:layout_constraintTop_toBottomOf="@+id/checkboxAnteater" />
 
         <EditText
             android:id="@+id/googleBrowser"

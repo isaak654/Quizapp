@@ -11,7 +11,6 @@ import android.widget.TextView;
 public class ScoreActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,22 +19,21 @@ public class ScoreActivity extends AppCompatActivity {
         scoreLabel();
         finalScore();
         restartAgainVisible();
-
-        }
+    }
 
     //Score message
-    public void scoreLabel () {
+    public void scoreLabel() {
         TextView score = (TextView) findViewById(R.id.score_label);
         //If score is higher than 3, display a congratulations message, otherwise the opposite.
         if (getSum() > 3) {
-        score.setText(String.format("%s", getString(R.string.score_success) + "\t" + getName() + "\n\n" + getString(R.string.score_label)));
+            score.setText(String.format("%s", getString(R.string.score_success) + "\t" + getName() + "\n\n" + getString(R.string.score_label)));
         } else {
-        score.setText(String.format("%s", getString(R.string.score_failure) + "\n\n" + getString(R.string.score_label)));
+            score.setText(String.format("%s", getString(R.string.score_failure) + "\n\n" + getString(R.string.score_label)));
         }
-        }
+    }
 
     //Total score
-    public void finalScore () {
+    public void finalScore() {
         TextView score = (TextView) findViewById(R.id.final_score);
         //If score is higher than 3, display it in blue color, otherwise in red color.
         if (getSum() > 3) {
@@ -50,8 +48,8 @@ public class ScoreActivity extends AppCompatActivity {
 
     // Restart again button visibility state
     public void restartAgainVisible() {
-        if (getSum() < 6){
-            Button btn= (Button) findViewById(R.id.restart_bt);
+        if (getSum() < 6) {
+            Button btn = (Button) findViewById(R.id.restart_bt);
             btn.setVisibility(View.VISIBLE);
         }
     }
@@ -60,10 +58,10 @@ public class ScoreActivity extends AppCompatActivity {
     public void restartAgain(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-        }
+    }
 
     // Exit button (not a real exit, the app will be moved in background)
-    public void exitApp (View view) {
+    public void exitApp(View view) {
         this.finish();
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.addCategory(Intent.CATEGORY_HOME);

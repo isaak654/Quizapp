@@ -34,7 +34,6 @@ public class QuizActivity extends AppCompatActivity {
         TextView userName = (TextView) findViewById(R.id.name_field);
         userName.setText(String.format("%s", welcome + nameField));
 
-
         //Variable initialization
         canadaCapital = (EditText) findViewById(R.id.canadaCapital);
 
@@ -60,8 +59,6 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
 
     // Sum of corrects answers
@@ -75,8 +72,10 @@ public class QuizActivity extends AppCompatActivity {
         RadioButton answerQ3 = (RadioButton) findViewById(R.id.RadioButton2C);
         EditText answerQ4 = (EditText) findViewById(R.id.canadaCapital);
         String answer4 = answerQ4.getText().toString();
-        CheckBox answerQ5_1 = (CheckBox) findViewById(R.id.checkbox2);
-        CheckBox answerQ5_2 = (CheckBox) findViewById(R.id.checkbox4);
+        CheckBox answerQ5_1 = (CheckBox) findViewById(R.id.checkboxAnteater);
+        CheckBox answerQ5_2 = (CheckBox) findViewById(R.id.checkboxWhale);
+        CheckBox answerQ5_3 = (CheckBox) findViewById(R.id.checkboxChicken);
+        CheckBox answerQ5_4 = (CheckBox) findViewById(R.id.checkboxPigeon);
         EditText answerQ6 = (EditText) findViewById(R.id.googleBrowser);
         String answer6 = answerQ6.getText().toString();
 
@@ -97,7 +96,9 @@ public class QuizActivity extends AppCompatActivity {
         if (answerQ5_1.isChecked() && (answerQ5_2.isChecked())) {
             sum++;
         }
-
+        if (answerQ5_3.isChecked() && (answerQ5_4.isChecked())) {
+            sum--;
+        }
         if (answer6.equalsIgnoreCase("Chrome")) {
             sum++;
         }
@@ -107,23 +108,25 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
-    /** Called to hide keyboard on android after clicking outside EditText  */
+    /**
+     * Called to hide keyboard on android after clicking outside EditText
+     */
     public void hideKeyboard(View view) {
-        InputMethodManager inputMethodManager =(InputMethodManager)getSystemService(Activity.INPUT_METHOD_SERVICE);
+        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
-    /** Called when the user taps the Send button to switch Activity */
+    /**
+     * Called when the user taps the Send button to switch Activity
+     */
     public void changeActivity2(View view) {
         Intent passValue = new Intent(this, ScoreActivity.class);
         passValue.putExtra("id_sum", sumPoints());
         passValue.putExtra("id_name", nameField);
         if (passValue.resolveActivity(getPackageManager()) != null) {
-        startActivity(passValue);
-        finish();
+            startActivity(passValue);
+            finish();
         }
     }
 
-
 }
-

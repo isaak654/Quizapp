@@ -71,13 +71,13 @@ public class QuizActivity extends AppCompatActivity {
         RadioButton answerQ2 = (RadioButton) findViewById(R.id.RadioButton1B);
         RadioButton answerQ3 = (RadioButton) findViewById(R.id.RadioButton2C);
         EditText answerQ4 = (EditText) findViewById(R.id.canadaCapital);
-        String answer4 = answerQ4.getText().toString();
+        String answer4 = answerQ4.getText().toString().trim();
         CheckBox answerQ5_1 = (CheckBox) findViewById(R.id.checkboxAnteater);
         CheckBox answerQ5_2 = (CheckBox) findViewById(R.id.checkboxWhale);
         CheckBox answerQ5_3 = (CheckBox) findViewById(R.id.checkboxChicken);
         CheckBox answerQ5_4 = (CheckBox) findViewById(R.id.checkboxPigeon);
         EditText answerQ6 = (EditText) findViewById(R.id.googleBrowser);
-        String answer6 = answerQ6.getText().toString();
+        String answer6 = answerQ6.getText().toString().trim();
 
 
         //If answers are correct, then increment score by 1 point

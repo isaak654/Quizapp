@@ -93,11 +93,8 @@ public class QuizActivity extends AppCompatActivity {
         if (answer4.equalsIgnoreCase("Ottawa")) {
             sum++;
         }
-        if (answerQ5_1.isChecked() && (answerQ5_2.isChecked())) {
+        if (answerQ5_1.isChecked() && answerQ5_2.isChecked() && !answerQ5_3.isChecked() && !answerQ5_4.isChecked()) {
             sum++;
-        }
-        if (answerQ5_3.isChecked() && (answerQ5_4.isChecked())) {
-            sum--;
         }
         if (answer6.equalsIgnoreCase("Chrome")) {
             sum++;
